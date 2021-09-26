@@ -181,7 +181,7 @@ public class NewCustomerCreate {
 
         WebElement Address = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(7) > td:nth-child(2) > textarea"));
         Address.clear();
-        Address.sendKeys("Dhakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+        Address.sendKeys("Dhakaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 
         WebElement City = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(8) > td:nth-child(2) > input[type=text]"));
         City.clear();
@@ -448,113 +448,6 @@ public class NewCustomerCreate {
 
     }
 
-    public static void TC_008() {
-        WebElement Name = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > input[type=text]"));
-        Name.clear();
-        Name.sendKeys("Ullash Hasan");
-
-        WebElement Gender = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(5) > td:nth-child(2) > input[type=radio]:nth-child(1)"));
-        Gender.click();
-
-        WebElement BirthDate = driver.findElement(By.cssSelector("#dob"));
-        BirthDate.clear();
-        BirthDate.sendKeys("04011990");
-
-        WebElement Address = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(7) > td:nth-child(2) > textarea"));
-        Address.clear();
-        Address.sendKeys("Dhaka");
-
-        WebElement City = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(8) > td:nth-child(2) > input[type=text]"));
-        City.clear();
-        City.sendKeys("Dhaka");
-
-        WebElement State = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(9) > td:nth-child(2) > input[type=text]"));
-        State.clear();
-        State.sendKeys("Dhaka");
-
-        WebElement Pin = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(10) > td:nth-child(2) > input[type=text]"));
-        Pin.clear();
-        Pin.sendKeys("101077");
-
-        WebElement Mobile = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(11) > td:nth-child(2) > input[type=text]"));
-        Mobile.clear();
-        Mobile.sendKeys("0170245827");
-
-        WebElement Email = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(12) > td:nth-child(2) > input[type=text]"));
-        Email.clear();
-        Email.sendKeys("ullashhhhjhhhhhhhhhhhhhhh@gmail.com");
-
-        WebElement Password = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(13) > td:nth-child(2) > input[type=password]"));
-        Password.clear();
-        Password.sendKeys("331111");
-
-        WebElement Submit = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(14) > td:nth-child(2) > input[type=submit]:nth-child(1)"));
-        Submit.click();
-
-        String Expected_Tittle = "Guru99 Bank Customer Registration Page";
-        String Actual_Tittle = driver.getTitle();
-        if (Expected_Tittle.equals(Actual_Tittle)) {
-            System.out.println("Test Case 08 Pass");
-        } else {
-            System.out.println("Test Case 08 Failed");
-        }
-
-        WebElement New_Customer = driver.findElement(By.cssSelector("body > div:nth-child(6) > div > ul > li:nth-child(2) > a"));
-        New_Customer.click();
-
-    }
-    public static void TC_009() {
-        WebElement Name = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(4) > td:nth-child(2) > input[type=text]"));
-        Name.clear();
-        Name.sendKeys("Soumik Hasan");
-
-        WebElement Gender = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(5) > td:nth-child(2) > input[type=radio]:nth-child(1)"));
-        Gender.click();
-
-        WebElement BirthDate = driver.findElement(By.cssSelector("#dob"));
-        BirthDate.clear();
-        BirthDate.sendKeys("03011990");
-
-        WebElement Address = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(7) > td:nth-child(2) > textarea"));
-        Address.clear();
-        Address.sendKeys("Dhaka");
-
-        WebElement City = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(8) > td:nth-child(2) > input[type=text]"));
-        City.clear();
-        City.sendKeys("Dhaka");
-
-        WebElement State = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(9) > td:nth-child(2) > input[type=text]"));
-        State.clear();
-        State.sendKeys("Dhaka");
-
-        WebElement Pin = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(10) > td:nth-child(2) > input[type=text]"));
-        Pin.clear();
-        Pin.sendKeys("101021");
-
-        WebElement Mobile = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(11) > td:nth-child(2) > input[type=text]"));
-        Mobile.clear();
-        Mobile.sendKeys("0160346279");
-
-        WebElement Email = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(12) > td:nth-child(2) > input[type=text]"));
-        Email.clear();
-        Email.sendKeys("soumikhasan19@gmail.com");
-
-        WebElement Password = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(13) > td:nth-child(2) > input[type=password]"));
-        Password.clear();
-        Password.sendKeys("333333");
-
-        WebElement Reset = driver.findElement(By.cssSelector("body > table > tbody > tr > td > table > tbody > tr:nth-child(14) > td:nth-child(2) > input[type=reset]:nth-child(2)"));
-        Reset.click();
-
-        String Expected_Tittle = "Guru99 Bank New Customer Entry Page";
-        String Actual_Tittle = driver.getTitle();
-        if (Expected_Tittle.equals(Actual_Tittle)) {
-            System.out.println("Test Case 09 Pass");
-        } else {
-            System.out.println("Test Case 09 Failed");
-        }
-
-    }
 
 
 
